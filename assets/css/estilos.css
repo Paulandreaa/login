@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../ima/WhatsApp\ Image\ 2024-02-18\ at\ 8.54.51\ PM.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+/* Caja grande*/
+.caja__trasera{
+    width: 100%;
+    padding: 200px 40px;
+    display: flex;
+    justify-content: right;
+    -webkit-backdrop-filter: blur(60px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(92, 171, 218, 0.5);
+    border-radius: 20px;
+}
+/*Letras dentro de caja principal*/
+.caja__trasera div{
+    margin: 0px 40px;
+    color: rgb(49, 13, 13);
+    transition: all 100ms;
+}
+
+
+.caja__trasera div h3{
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: 10cm;
+    font-style: oblique;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: px;
+     margin-left: 10cm;
+    
+}
+
+
+
+/*Formularios*/
+/*Contenedor cubo blanco*/
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 380px;
+    position: inherit;
+    top: -240px; /*Posicion*/
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+ /*caracteristicas del cubo ese*/
+.contenedor__login-register form{
+    width: 100%;
+    padding: 100px 20px;
+    background: white;
+    position:   absolute;
+    padding: 60px;
+    border-radius: 50px;
+    margin:100px 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+
+    text-align: center;
+    margin-bottom: 20px;
+    color:black;
+}
+
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #8ec535;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
